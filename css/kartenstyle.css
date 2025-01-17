@@ -1,0 +1,167 @@
+.frage_antwort{
+    background-image: url('../image/karteikarte.svg');
+    background-size: cover;
+    position: absolute;
+    display:block;
+    top: 29%;
+    left: 23%;
+    width: 40vw;
+    height: 30vw; 
+    z-index: 1;
+}
+
+
+
+.frage {
+    position: absolute;
+    text-align: center;
+    padding: 5vw;
+    display:block;
+    margin: auto;
+    font-size: 1em;
+}
+
+.icon {
+	position: absolute;
+	height: 2vw;
+	display: flow;
+	top:2vw;
+	right:2vw;
+	align: right;
+
+}
+
+.antwort {
+    visibility: hidden ;
+    position: absolute;
+    text-align: center;
+    width: 40vw;
+    height: 30vw; 
+    background-color: transparent; 
+    padding: 5vw;
+    display:block;
+    margin: auto;
+    font-size: 1em;
+}
+
+.neue_frage{
+    background-color: rebeccapurple;
+    display:inline-block;
+    color:whitesmoke;
+    padding: 1px;
+    margin: 1px;
+    border: none;
+
+}
+.index{
+    color:whitesmoke;
+    margin 2px;
+    padding 2px;
+	float:right
+}
+.next{
+    background-color: transparent; 
+    background-image: url('../image/karteikarte.svg');
+    background-size: cover;
+    filter: brightness(0.9);
+    z-index: 0;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    top: 30%;
+    left: 25%;
+    width: 40vw;
+    height: 30vw; 
+}
+.next:hover{
+    border: none;
+    filter: brightness(1.1);
+}
+.next:active{
+    border: none;
+
+    filter: brightness(1.1);
+}
+.next:focus{
+    border: none;
+    filter: brightness(1.1);
+}
+
+.flip{
+	z-index: 255;
+	visibility: visible;
+}
+.flip:checked + .fliplabel + .frage{
+    visibility: hidden;
+}
+.flip:checked + .fliplabel + .frage + .antwort{
+    visibility: visible;
+}
+.fliplabel{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right:5px;
+	bottom:5px;
+}
+.radio {
+background-color: rebeccapurple;
+position: absolute;
+right:5%;
+align: center;
+padding: 10px;
+margin: 0px;
+}
+.radio input[type='radio'] {
+  display: none;
+    /*removes original button*/
+  }
+  .radio label span {
+	  /*styles outer circle*/
+	  content: "";
+	  display: inline-block;
+	  position: relative;
+	  width: 50px;
+	  height: 20px;
+	  background-color: gray;
+	  margin: 0px;
+padding: 0px;
+  }
+
+  .radio label {
+	  position: relative;
+	  padding: 0px;
+	  margin: 0px;
+  }
+
+  .radio label input[type='radio'][value='0']:checked+span {
+	  /*styles inside circle*/
+	  background-color: green;
+	  padding: 0px;
+	  margin: 0px;
+  }
+
+  .radio label input[type='radio'][value='1']:checked+span {
+	  /*styles inside circle*/
+	  background-color: yellow;
+	  padding: 0px;
+	  margin: 0px;
+  }
+  .radio label input[type='radio'][value='2']:checked+span {
+	  /*styles inside circle*/
+	  background-color: red;
+	  padding: 0px;
+	  margin: 0px;
+  }
+
+  .radio label input[type='radio'][value=0]+span {
+	  /*styles inside circle*/
+	  left:0px;
+	  right:0px;
+ padding: 0px;
+	  margin: 0px;
+	  background-color: gray;
+	  border:inset;
+	  border-color:black;
+	  border-width:1px;
+  }

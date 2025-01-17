@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:100,200,300,400,500,600,700,800,900');
+
+
+/* Grundlegende Styles für Desktop */
+body {
+    font-size: 16px;
+  }
+  
+  /* Anpassungen für Tablets und kleinere Bildschirme */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* Anpassungen für Mobilgeräte */
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+  }
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* You can adjust the height to your needs */
+  }
+  
+
+/* Stile für den Footer hinzufügen */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin: -5px;
+    padding: 20px 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-email a {
+    text-decoration: none;
+    color: #0099cc;
+    font-weight: bold;
+}
+
+.footer-email a:hover {
+    text-decoration: underline;
+}
+/*----------------------------Container---------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --clr: #57595fef;
+}
+
+.navigation {
+    background: rgba(255, 255, 255, 0.438);  
+    backdrop-filter: blur(50px);
+    display: flex;
+    flex-direction: column; /* Navbar wird vertikal ausgerichtet */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 70px; /* Breite der Navbar anpassen */
+    height: 450px; /* Die Navbar erstreckt sich über die gesamte Seitenhöhe */
+    position: fixed; /* Navbar bleibt fixiert */
+    top: 30%; /* Navbar oben am Bildschirm positionieren */
+    left: 0; /* Navbar links am Bildschirm positionieren */
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column; /* Buttons werden vertikal ausgerichtet */
+    align-items: center; /* Buttons werden vertikal zentriert */
+    list-style: none;
+}
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+}
+
+.navigation ul li.active a .icon {
+    transform: translateY(-32px);
+}
+
+.navigation ul li a .text {
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navigation ul li.active a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.indicator {
+    position: absolute;
+    top: 5%;
+    width: 70px;
+    height: 70px;
+    background: #29fd53;
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+    transform: rotate(90deg);
+}
+
+.indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 var(--clr);
+}
+
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 var(--clr);
+}
+.navigation ul li:nth-child(1).active ~ .indicator
+{
+    transform: translateY(calc(70px * 0));
+}
+.navigation ul li:nth-child(2).active ~ .indicator
+{
+    transform: translateY(calc(70px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator
+{
+    transform: translateY(calc(70px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator
+{
+    transform: translateY(calc(70px * 3));
+}
+.navigation ul li:nth-child(5).active ~ .indicator
+{
+    transform: translateY(calc(70px * 4));
+}

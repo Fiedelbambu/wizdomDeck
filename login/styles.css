@@ -1,0 +1,105 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("..image/background6.jpg");
+}
+
+.block {
+    position: relative;
+    margin: 10% auto;
+    width: 50%;
+    height: 400px;
+    background: linear-gradient(0deg, black, rgb(44, 43, 43));
+}
+
+/* Hier fügen Sie den CSS-Code für die Buttons hinzu */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0099cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+
+    /* Fügen Sie den glow-Effekt auf die Buttons hinzu */
+    position: relative;
+    z-index: 1;
+}
+
+/* Ihr CSS-Code für den glow-Effekt und andere Stile geht hier weiter */
+.glow::before,
+.glow::after,
+.button-container button::before,
+.button-container button::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background-image: linear-gradient(45deg, #C3D317FF, #E26A24FF, #00ff66, #00ffff,
+    #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+    background-size: 400%;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+.button-container button::before,
+.button-container button::after {
+    filter: blur(40px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+/* Stile für den Footer hinzufügen */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-email a {
+    text-decoration: none;
+    color: #0099cc;
+    font-weight: bold;
+}
+
+.footer-email a:hover {
+    text-decoration: underline;
+}

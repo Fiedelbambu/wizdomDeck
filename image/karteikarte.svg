@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="52.916664mm"
+   height="39.6875mm"
+   viewBox="0 0 52.916665 39.6875"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="karteikarte.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.9825758"
+     inkscape:cx="31.013462"
+     inkscape:cy="38.389637"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#circle"
+       preserveAspectRatio="xMidYMid"
+       id="pattern18"
+       patternTransform="matrix(0.4987585,0,0,0.58866624,178.30126,-22.256004)"
+       x="0"
+       y="0" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="10"
+       height="10"
+       patternTransform="translate(307.92203,-100.78567)"
+       preserveAspectRatio="xMidYMid"
+       id="circle"
+       style="fill:#f2ecc2"
+       x="0"
+       y="0"
+       inkscape:label="Circle"
+       inkscape:collect="always"
+       inkscape:isstock="true">
+      <circle
+         style="display:inline;fill-opacity:1;stroke-width:6;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
+         id="path10"
+         cx="5"
+         cy="5"
+         r="5" />
+    </pattern>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath52">
+      <path
+         id="path52"
+         style="stroke-width:0.1;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
+         d="m -880.82767,-187.29769 h 1640.84 v 73.28155 h -1640.84 z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath25">
+      <rect
+         style="fill:#ff0000;stroke:none;stroke-width:3;stroke-linecap:square;stroke-linejoin:miter;paint-order:stroke markers fill;stop-color:#000000"
+         id="rect25-8"
+         width="78"
+         height="45.033199"
+         x="763.61322"
+         y="452.82422" />
+    </clipPath>
+    <linearGradient
+       id="swatch2"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#3a3a3a;stop-opacity:1;"
+         offset="0"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch2"
+       id="linearGradient2"
+       x1="49.040077"
+       y1="123.83871"
+       x2="155.70186"
+       y2="123.83871"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.4987585,0,0,0.58866624,24.722525,37.073118)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch2"
+       id="linearGradient9"
+       gradientUnits="userSpaceOnUse"
+       x1="49.040077"
+       y1="123.83871"
+       x2="155.70186"
+       y2="123.83871"
+       gradientTransform="matrix(0.49093422,0,0,0.57915438,25.5929,38.26877)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-49.322578,-90.129035)">
+    <rect
+       style="fill:url(#pattern18);fill-opacity:1;stroke:url(#linearGradient2);stroke-width:0;stroke-dasharray:none"
+       id="rect1"
+       width="52.916664"
+       height="39.6875"
+       x="49.322578"
+       y="90.129036" />
+    <rect
+       style="fill:#f2ecc2;fill-opacity:1;stroke:url(#linearGradient9);stroke-width:0;stroke-dasharray:none"
+       id="rect1-2"
+       width="52.086536"
+       height="39.046219"
+       x="49.807041"
+       y="90.4674"
+       inkscape:label="rect1-2" />
+  </g>
+</svg>

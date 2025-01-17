@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+    <style>
+        body {
+            background-image: url('../image/background6.gif');
+            background-size: cover;
+            /* Optional: Das Bild so skalieren, dass es den gesamten Hintergrund bedeckt */
+            background-repeat: no-repeat;
+            /* Optional: Wiederholung des Bildes deaktivieren */
+        }
+    </style>
+
+
+
+
+</head>
+
+
+
+<header>
+    <div style="text-align: center;">
+        <img src="../image/logo_versuch.png" alt="Dein Logo" class="logo" width="970" height="250">
+    </div>
+
+
+</header>
+
+<body>
+
+
+
+
+    <main>
+        <div class="nav-container">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="../php/index.php">
+                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="../landingpage/agb.html">
+                            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <span class="text">Profiel</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                            <span class="text">Mesaage</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
+                            <span class="text">Fotos</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                            <span class="text">Settings</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+        </div>
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink() {
+                list.forEach((item) =>
+                    item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) =>
+                item.addEventListener('click', activeLink));
+
+        </script>
+      
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="landingpage/agb.html">AGB</a></li>
+                <li><a href="#">Über uns</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+            <p class="footer-email">E-Mail: <a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+
+</html>
